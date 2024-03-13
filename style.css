@@ -1,6 +1,6 @@
 /* intuitivnejsi box-sizing */
 html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+*, ::after, ::before { box-sizing: inherit;  }
 
 body {
     text-rendering: optimizeLegibility;
@@ -21,3 +21,109 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+.kontejner {width: 670px; height: 440px;
+box-shadow: 5px 5px 5px 0 rgba(0,0,0,0.3);
+display: flex; margin-left: auto; margin-right: auto; margin-top: 100px;; }
+.zelena {background-image: linear-gradient(#06d7c1, #50cc49 );
+ flex-basis: 50%; flex-grow: 1; width: 345px;padding: 30px 30px 30px 30px; 
+z-index: 1;}
+.bila { flex-basis: 50%;padding: 30px 30px 30px 30px; position: relative;}
+.zaruka{font-size: 12px;
+    font-weight: 400;
+    color: white;
+    font-family: rubik;
+    text-align: right;
+  position: relative;
+  bottom:80px;
+  
+    
+}
+.kc {font-size: 28px;
+        font-weight: 500;
+        color: white;
+        font-family: rubik;
+        position: relative;
+        bottom: 80px;
+        text-align: right;
+}
+
+   .bota {margin-left: -110px;z-index: 1;}
+   .zrychli {
+ 
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    font-family: rubik;
+    margin-right: 30px;
+margin-top: 30px;}
+h1{font-family: rubik;
+    font-size: 20px;
+	font-weight: 500;
+	line-height: 1;
+margin-top: 10px;;
+    text-transform: uppercase;
+}
+.damska {font-family: rubik;
+font-size: 14px;
+font-weight: 400;
+color:#959595 ;}
+.text{font-family: rubik;
+font-weight: 400;
+font-size: 14px;
+border-bottom: 1px solid #06d7c1;
+margin-top: 30px;
+margin-bottom: 30px;
+padding-bottom: 30px;
+}
+h2{font-family: rubik;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+ul{display: flex; align-items: center; padding: 0;
+}
+li{list-style-type: none; margin-left: 10px;
+    width: 30px;
+	height: 30px;
+    line-height: 30px;
+    padding: 0;
+    text-align: left;
+    font-family: rubik;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+}
+li:hover,
+li:active,
+li.vybrana {
+	/* barva textu a rámečku pro vybranou velikost bot (nebo tu, nad kterou je myš) */
+	font-weight: 500;
+	color: #f15f42;
+	border: 1px solid #f15f42;
+}
+
+
+.akce{position: absolute;
+	
+}
+    .kosik {
+       
+        font-family: rubik;
+        display: inline-block;
+        padding: 18px 30px 14px 30px;
+        line-height: 1;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 1px;
+        background-color: #f15f42;
+        color: white;
+        border-radius: 6px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+        margin-top: 10px; 
+    }
+    .kosik:hover,
+.kosik:active,
+.kosik:focus {
+	/* změna barvy pozadí při najetí myší nad tlačítko */
+	background-color: #d54c31;}
